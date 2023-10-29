@@ -2,10 +2,10 @@ function Header() {
   return (
     <div>
       <div className="bg-black flex flex-row w-full h-96">
-        <div className="w-3/6 h-96"></div>
-        <div className="w-3/6 h-96">
-          <div className="bg-black w-full h-96 flex justify-center items-center pb-20 ">
-            <span className="bg-clip-text text-transparent text-9xl bg-[url('./images/background.png')] font-jost">
+        <div className="w-1/3 h-96"></div>
+        <div className="w-2/3 h-96">
+          <div className="bg-black w-full h-96 flex justify-center items-center pb-15 ">
+            <span className="bg-clip-text text-transparent text-[12rem] leading-[9rem] bg-[url('./images/background.png')] font-jost">
               19
               <br />
               57
