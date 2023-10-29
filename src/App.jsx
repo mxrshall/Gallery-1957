@@ -3,6 +3,7 @@ import Navigacia from "./Navigacia";
 import Header from "./Header";
 import Novinky from "./Novinky";
 import Umelci from "./Umelci";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Novinky />
       <Umelci />
+      <Footer />
     </>
   );
 }
