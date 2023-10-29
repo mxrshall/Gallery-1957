@@ -47,8 +47,10 @@ function Umelci() {
           {umelci.map((umelec) => (
             <SwiperSlide key={umelec.id} className="">
               <div className="w-1/2 w-full flex justify-center items-center flex-col">
-                <img className="w-36" src={umelec.fotka}></img>
-                <h1>{umelec.meno}</h1>
+                <img className="w-36 grayscale" src={umelec.fotka}></img>
+                <p className="text-black text-xs font-julius pt-2">
+                  {umelec.meno}
+                </p>
               </div>
             </SwiperSlide>
           ))}
