@@ -20,7 +20,7 @@ function Galeria() {
         </div>
         <div className="w-1/12 h-64 flex justify-center">
           <motion.div
-            className="w-1/12 h-64 bg-white origin-[0%]"
+            className="w-1/12 h-52 bg-white origin-[0%]"
             style={{ scaleY: scrollYProgress }}
           ></motion.div>
         </div>
