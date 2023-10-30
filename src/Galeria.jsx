@@ -8,18 +8,23 @@ function Galeria() {
   const { scrollYProgress } = useScroll({ container: ref });
 
   return (
-    <div className="bg-black flex justify-center items-center flex-col">
+    <div className="bg-black">
       <Nadpis nadpis="Galéria 1957" color="white" />
-      <div
-        ref={ref}
-        className="w-3/4 h-64 text-xs font-julius text-justify text-white overflow-auto"
-      >
-        <GaleriaText />
+      <div className="flex justify-center items-center flex-row">
+        <div className="w-1/12 h-64"></div>
+        <div
+          ref={ref}
+          className="w-3/4 h-64 text-xs font-julius text-justify text-white overflow-auto"
+        >
+          <GaleriaText />
+        </div>
+        <div className="w-1/12 h-64 flex justify-center">
+          <motion.div
+            className="w-1/12 h-64 bg-white origin-[0%]"
+            style={{ scaleY: scrollYProgress }}
+          ></motion.div>
+        </div>
       </div>
-      <motion.div
-        className="w-3/4 h-10 bg-red-500 origin-[0%]"
-        style={{ scaleX: scrollYProgress }}
-      ></motion.div>
     </div>
   );
 }
