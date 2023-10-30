@@ -7,7 +7,7 @@ import image2 from "./images/image2.png";
 function Novinky() {
   return (
     <div className="flex justify-center items-center flex-col">
-      <Nadpis nadpis="Novinky" />
+      <Nadpis nadpis="Novinky" color="black" />
       <Novinka
         image={image1}
         nazov="ZAK OVÉ AT FRIEZE SCULPTURE 2023"

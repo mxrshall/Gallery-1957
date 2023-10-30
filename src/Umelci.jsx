@@ -21,7 +21,7 @@ const umelci = [
     meno: "JUWON ADEREMI",
   },
   {
-    id: 1,
+    id: 2,
     fotka: umelec3,
     meno: "ANNAN AFFOTEY",
   },
@@ -30,7 +30,7 @@ const umelci = [
 function Umelci() {
   return (
     <div className="flex justify-center items-center flex-col">
-      <Nadpis nadpis="Umelci" />
+      <Nadpis nadpis="Umelci" color="black" />
       <div className="w-full flex justify-center items-center">
         <Swiper
           style={{
