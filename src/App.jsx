@@ -4,6 +4,7 @@ import Header from "./Header";
 import Novinky from "./Novinky";
 import Umelci from "./Umelci";
 import Footer from "./Footer";
+import Galeria from "./Galeria";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navigacia />
       <Header />
       <Novinky />
+      <Galeria />
       <Umelci />
       <Footer />
     </>
