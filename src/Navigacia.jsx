@@ -17,7 +17,7 @@ function Navigacia() {
       <AnimatePresence>
         {open && (
           <motion.div
-            className="w-full h-32 bg-red-500 fixed z-3"
+            className="w-full h-32 bg-black bg-opacity-90 fixed z-3 flex justify-center items-center flex-col text-white text-base font-julius"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "30vh", opacity: 1 }}
             exit={{
@@ -26,10 +26,10 @@ function Navigacia() {
               transition: { ease: "easeInOut", duration: 0.3 },
             }}
           >
-            <p>Item</p>
-            <p>Item</p>
-            <p>Item</p>
-            <p>Item</p>
+            <p>Domov</p>
+            <p>Umelci</p>
+            <p>Galéria</p>
+            <p>Novinky</p>
           </motion.div>
         )}
       </AnimatePresence>

@@ -35,7 +35,7 @@ export function GaleriaText() {
       vôbec prvú venovanú umeleckú cenu svojho druhu. Cieľom ceny je ďalej
       posilniť záväzok galérie podporovať a propagovať začínajúcich a
       etablovaných umelcov.
-      <img className="w-full h-42 py-5" src={galeria4}></img>
+      <img className="w-full h-42 pt-5 pb-12" src={galeria4}></img>
     </article>
   );
 }
