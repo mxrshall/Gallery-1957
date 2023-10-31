@@ -12,7 +12,7 @@ function Header() {
             </span>
           </div>
         </div>
-        <div className="w-full h-96 absolute flex items-end pl-8 pb-12">
+        <div className="w-full h-96 absolute flex items-end pl-8 pb-12 z-0">
           <span className="text-white text-xl font-julius">
             Galéria predstavuje
             <br />
