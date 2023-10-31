@@ -1,21 +1,15 @@
 import "./App.css";
-import Navigacia from "./Navigacia";
-import Header from "./Header";
-import Novinky from "./Novinky";
-import Umelci from "./Umelci";
-import Footer from "./Footer";
-import Galeria from "./Galeria";
+import Homepage from "./Homepage";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Navigacia />
-      <Header />
-      <Novinky />
-      <Galeria />
-      <Umelci />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<Homepage />} />
+        <Route path="/home" element={<Homepage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

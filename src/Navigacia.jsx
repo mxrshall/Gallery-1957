@@ -2,6 +2,8 @@ import Menu from "./Menu";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import { Link } from "react-router-dom";
+
 function Navigacia() {
   const [open, setOpen] = useState(false);
 
@@ -26,10 +28,7 @@ function Navigacia() {
               transition: { ease: "easeInOut", duration: 0.3 },
             }}
           >
-            <p>Domov</p>
-            <p>Umelci</p>
-            <p>Galéria</p>
-            <p>Novinky</p>
+            <Link to="/home">Domov</Link>
           </motion.div>
         )}
       </AnimatePresence>
