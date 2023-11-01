@@ -13,7 +13,7 @@ const umelci = [
   {
     id: 0,
     fotka: umelec1,
-    meno: "CORNELIUS ANNOR",
+    meno: "ANNAN AFFOTEY",
   },
   {
     id: 1,
@@ -23,7 +23,7 @@ const umelci = [
   {
     id: 2,
     fotka: umelec3,
-    meno: "ANNAN AFFOTEY",
+    meno: "CORNELIUS ANNOR",
   },
 ];
 

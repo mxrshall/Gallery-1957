@@ -29,6 +29,7 @@ function Navigacia() {
             }}
           >
             <Link to="/home">Domov</Link>
+            <Link to="/artist">Umelci</Link>
           </motion.div>
         )}
       </AnimatePresence>
