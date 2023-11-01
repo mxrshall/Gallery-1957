@@ -7,7 +7,10 @@ function Umelec(props) {
           backgroundImage: `url(${props.image})`,
         }}
       >
-        <div className="w-full h-full bg-black opacity-60"></div>
+        <div className="w-full h-full bg-black opacity-70 pt-10 pl-5">
+          <h1 className="text-white text-xl font-julius pb-2">{props.meno}</h1>
+          <p className="text-white text-xs font-julius">{props.popis}</p>
+        </div>
       </div>
     </div>
   );
