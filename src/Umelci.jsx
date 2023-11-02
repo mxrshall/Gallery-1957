@@ -12,17 +12,17 @@ import "swiper/css/navigation";
 
 const umelci = [
   {
-    id: "/#annan",
+    id: "annan",
     fotka: umelec1,
     meno: "ANNAN AFFOTEY",
   },
   {
-    id: "/#juwon",
+    id: "juwon",
     fotka: umelec2,
     meno: "JUWON ADEREMI",
   },
   {
-    id: "/#cornelius",
+    id: "cornelius",
     fotka: umelec3,
     meno: "CORNELIUS ANNOR",
   },
@@ -47,7 +47,7 @@ function Umelci() {
         >
           {umelci.map((umelec) => (
             <SwiperSlide key={umelec.id}>
-              <Link href={umelec.id}>
+              <Link to="/artist">
                 <div className="w-1/2 w-full flex justify-center items-center flex-col">
                   <img className="w-36 grayscale" src={umelec.fotka}></img>
                   <p className="text-black text-xs font-julius pt-2">
