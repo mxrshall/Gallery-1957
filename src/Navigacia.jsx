@@ -30,6 +30,7 @@ function Navigacia() {
           >
             <Link to="/home">Domov</Link>
             <Link to="/artist">Umelci</Link>
+            <Link to="/gallery">Galéria</Link>
           </motion.div>
         )}
       </AnimatePresence>
