@@ -1,6 +1,7 @@
 import Nadpis from "./Nadpis";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 import umelec1 from "./images/umelec1.png";
 import umelec2 from "./images/umelec2.png";
@@ -11,17 +12,17 @@ import "swiper/css/navigation";
 
 const umelci = [
   {
-    id: 0,
+    id: "/#annan",
     fotka: umelec1,
     meno: "ANNAN AFFOTEY",
   },
   {
-    id: 1,
+    id: "/#juwon",
     fotka: umelec2,
     meno: "JUWON ADEREMI",
   },
   {
-    id: 2,
+    id: "/#cornelius",
     fotka: umelec3,
     meno: "CORNELIUS ANNOR",
   },
@@ -45,13 +46,15 @@ function Umelci() {
           modules={[Navigation]}
         >
           {umelci.map((umelec) => (
-            <SwiperSlide key={umelec.id} className="">
-              <div className="w-1/2 w-full flex justify-center items-center flex-col">
-                <img className="w-36 grayscale" src={umelec.fotka}></img>
-                <p className="text-black text-xs font-julius pt-2">
-                  {umelec.meno}
-                </p>
-              </div>
+            <SwiperSlide key={umelec.id}>
+              <Link href={umelec.id}>
+                <div className="w-1/2 w-full flex justify-center items-center flex-col">
+                  <img className="w-36 grayscale" src={umelec.fotka}></img>
+                  <p className="text-black text-xs font-julius pt-2">
+                    {umelec.meno}
+                  </p>
+                </div>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

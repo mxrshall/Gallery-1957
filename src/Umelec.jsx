@@ -1,6 +1,6 @@
 function Umelec(props) {
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div id={props.id} className="flex justify-center items-center flex-col">
       <div
         className="w-full h-64 bg-cover grayscale"
         style={{

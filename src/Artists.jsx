@@ -13,16 +13,19 @@ function Artists() {
       <Navigacia />
       <Header />
       <Umelec
+        id="annan"
         meno="ANNAN AFFOTEY"
         popis="Umelec z Oxfordu Annan Affotey naviguje černošskú identitu prostredníctvom portrétovania. Jeho obrazy sa zameriavajú na farebné ženy a mužov so žiarivou tmavou pokožkou a dušou naplnenými červenými očami. Svoje postavy obklopuje negatívnym priestorom a umožňuje každému subjektu rozprávať svoj vlastný príbeh."
         image={annanaffotey}
       />
       <Umelec
+        id="juwon"
         meno="JUWON ADEREMI"
         popis="Juwon Aderemi je umelec narodený v Nigérii. Jeho prax sa primárne sústreďuje okolo surrealistických postáv a abstraktného realizmu na zobrazenie rozhovorov, ktoré sa zaoberajú kultúrou a presvedčením, na ktoré je prevažne zvyknutý. Pracuje v intuitívnom postupe, ktorý je primárne založený na portrétovaní, pričom uprednostňuje svoju nigérijskú kultúru."
         image={juwonaderemi}
       />
       <Umelec
+        id="cornelius"
         meno="CORNELIUS ANNOR"
         popis="Cornelius Annor je ghanský umelec, ktorý sa narodil v roku 1990.
         Jeho práca sa v súčasnosti predvádzajú na viacerých miestach, ako je Maruani Mercier v Bruseli. V mnohých kľúčových galériách a múzeách, ako je Opera Gallery v Dubaji, sa v minulosti vystavovali diela Cornelia Annora.
