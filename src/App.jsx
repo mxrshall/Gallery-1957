@@ -3,6 +3,7 @@ import Homepage from "./Homepage";
 import Artists from "./Artists";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Gallery from "./Gallery";
+import News from "./News";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/home" element={<Homepage />} />
         <Route path="/artist" element={<Artists />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/news" element={<News />} />
       </Routes>
     </BrowserRouter>
   );
