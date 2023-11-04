@@ -1,17 +1,20 @@
 import Navigacia from "./Navigacia";
 import Header from "./Header";
-import { useSearchParams } from "react-router-dom";
+
+import { useLocation } from "react-router-dom";
 
 function News() {
-  const [searchParams] = useSearchParams();
-  const data = searchParams.get("data");
+  const location = useLocation();
+  const data = location.state?.data;
 
   return (
     <>
       <Navigacia />
       <Header />
       <div className="w-full h-64 bg-black">
-        <p className="text-white">{data}</p>
+        <img src={data.foto}></img>
+        <p className="text-white"> {data.name}</p>
+        <p className="text-white"> {data.date}</p>
       </div>
     </>
   );
