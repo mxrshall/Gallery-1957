@@ -1,20 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Novinka({ image, nazov, datum }) {
-  const foto = image;
+function Novinka({ fotka, nazov, popis, datum }) {
+  const image = fotka;
   const name = nazov;
+  const description = popis;
   const date = datum;
 
   const [data, setData] = useState({
-    foto: foto,
+    image: image,
     name: name,
+    description: description,
     date: date,
   });
 
   return (
     <div className="w-3/4 h-52 mb-5">
-      <img className="w-full h-36" src={foto}></img>
+      <img className="w-full h-36" src={image}></img>
       <div className="text-black text-sm font-julius pt-2">
         <h1>{name}</h1>
       </div>
