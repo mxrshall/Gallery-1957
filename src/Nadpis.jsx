@@ -1,7 +1,7 @@
 function Nadpis(props) {
   return (
     <div
-      className="w-full h-14 text-2xl font-jost flex justify-center items-center"
+      className="w-full h-14 text-2xl font-jost flex justify-center items-center lg:text-3xl"
       style={{
         color: `${props.color}`,
       }}

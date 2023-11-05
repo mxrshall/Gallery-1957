@@ -14,7 +14,7 @@ export function GaleriaText() {
       z týchto komunít a zvyškom sveta, pričom predstavuje umelcov, ktorí
       skúmajú koncepty spolupatričnosti a identity, kultúrnej výmeny a sociálnej
       histórie mimo západných naratívov.
-      <img className="w-full h-42 py-5" src={galeria1}></img>
+      <img className="w-full h-42 my-5" src={galeria1}></img>
       Galéria 1957, ktorú spustil Marwan Zakhem v roku 2016 na Deň nezávislosti
       Ghany, sa odvtedy rozšírila do troch galérií v Akkre. Pôvodne bola
       založená na propagáciu prítomnosti Ghany a západnej Afriky na umeleckej
@@ -22,7 +22,7 @@ export function GaleriaText() {
       Gallery 1957 bol otvorený v októbri 2020 a poskytuje umelcom ďalšiu
       platformu na budovanie dialógov s jej rastúcou sieťou medzinárodných
       spolupracovníkov.
-      <img className="w-full h-42 py-5" src={galeria2}></img>
+      <img className="w-full h-42 my-5" src={galeria2}></img>
       Galéria 1957 predstavuje výstavy, inštalácie a predstavenia slávnych
       umelcov, čím podporuje spojenie medzi miestnym a medzinárodným publikom.
       Globálne partnerstvá s galériou a prebiehajúci program umeleckých
@@ -30,7 +30,7 @@ export function GaleriaText() {
       umeleckých profesionálov. Každoročný kultúrny týždeň Galérie v septembri
       slúži ako platforma na podporu hlbšieho zapojenia sa do pulzujúcej
       súčasnej umeleckej scény v Ghane.
-      <img className="w-full h-42 py-5" src={galeria3}></img>V roku 2021 Galéria
+      <img className="w-full h-42 my-5" src={galeria3}></img>V roku 2021 Galéria
       1957 uviedla cenu Yaa Asantewaa Art Prize pre ženské umelkyne z Ghany,
       vôbec prvú venovanú umeleckú cenu svojho druhu. Cieľom ceny je ďalej
       posilniť záväzok galérie podporovať a propagovať začínajúcich a
