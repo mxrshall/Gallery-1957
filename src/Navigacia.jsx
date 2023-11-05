@@ -9,7 +9,7 @@ function Navigacia() {
 
   return (
     <nav className="flex flex-row w-full h-10 fixed z-50 lg:h-16">
-      <div className="w-10/12 h-10 lg:w-full h-16 flex items-center text-white text-lg font-julius">
+      <div className="w-10/12 h-10 lg:w-full lg:h-16 flex items-center text-white text-lg font-julius">
         <Link to="/home" className="hidden lg:inline ml-8">
           Domov
         </Link>
