@@ -15,9 +15,9 @@ function Novinka({ fotka, nazov, popis, datum }) {
   });
 
   return (
-    <div className="w-3/4 h-52 mb-5 lg:w-1/3 lg:h-72 lg:mb-10">
-      <img className="w-full h-36 lg:h-60" src={image}></img>
-      <div className="text-black text-sm font-julius pt-2 lg:text-base">
+    <div className="w-3/4 h-52 mb-10 lg:w-1/4 lg:px-2">
+      <img className="w-full h-36 lg:h-48" src={image}></img>
+      <div className="text-black text-sm font-julius pt-2 lg:text-lg">
         <h1>{name}</h1>
       </div>
       <Link to="/news" state={{ data: data }}>
