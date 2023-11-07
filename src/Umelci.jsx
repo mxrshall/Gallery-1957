@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import umelec1 from "./images/umelec1.png";
 import umelec2 from "./images/umelec2.png";
 import umelec3 from "./images/umelec3.png";
+import umelec4 from "./images/umelec4.png";
+import umelec5 from "./images/umelec5.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,6 +28,16 @@ const umelci = [
     fotka: umelec3,
     meno: "CORNELIUS ANNOR",
   },
+  {
+    id: "gideon",
+    fotka: umelec4,
+    meno: "GIDEON APPAH",
+  },
+  {
+    id: "rita",
+    fotka: umelec5,
+    meno: "RITA MAWUENA BENISSAN",
+  },
 ];
 
 function Umelci() {
@@ -38,8 +50,11 @@ function Umelci() {
             "--swiper-navigation-color": "black",
             "--swiper-navigation-size": "1.2rem",
           }}
-          spaceBetween={20}
+          spaceBetween={10}
           slidesPerView={1}
+          breakpoints={{
+            992: { slidesPerView: 3 },
+          }}
           navigation={true}
           loop={true}
           scrollbar={{ draggable: true }}
