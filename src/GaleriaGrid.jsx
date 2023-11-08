@@ -28,10 +28,10 @@ function GaleriaGrid(props) {
             backgroundImage: `url(${props.foto1})`,
           }}
         ></div>
-        <div className="row-span-2 flex items-center justify-center flex-col">
-          <p>Test</p>
-          <p>Test</p>
-          <p>Test</p>
+        <div className="row-span-2 flex items-center justify-center flex-col font-julius text-3xl">
+          <p>{props.nazov1}</p>
+          <p>{props.nazov2}</p>
+          <p>{props.nazov3}</p>
         </div>
         <div
           className="bg-cover bg-no-repeat"
