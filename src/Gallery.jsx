@@ -18,17 +18,17 @@ function Gallery() {
     <>
       <Navigacia />
       <Header />
-      <div className="w-full h-64 bg-white p-5">
+      <div className="w-full h-full bg-white p-5 lg:h-[100vh]">
         <GaleriaGrid foto1={distracted} foto2={thejourney} foto3={widewalls} />
       </div>
-      <div className="w-full h-64 bg-black p-5">
+      <div className="w-full h-64 bg-black p-5 lg:h-[100vh]">
         <GaleriaGrid
           foto1={ajalatravels}
           foto2={portraitofanartistresting}
           foto3={abike}
         />
       </div>
-      <div className="w-full h-64 bg-white p-5">
+      <div className="w-full h-64 bg-white p-5 lg:h-[100vh]">
         <GaleriaGrid
           foto1={mrjoachim}
           foto2={venusovermanhattan}
