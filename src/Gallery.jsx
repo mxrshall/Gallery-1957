@@ -12,13 +12,24 @@ import abike from "./images/abike.webp";
 import mrjoachim from "./images/mrjoachim.webp";
 import venusovermanhattan from "./images/venusovermanhattan.jpeg";
 import ghanianlife from "./images/ghanianlife.jpg";
+import { useState } from "react";
 
 function Gallery() {
+  const [close, setClose] = useState(true);
+
   return (
     <>
+      {close && (
+        <div
+          className="w-full h-full bg-black bg-opacity-90 fixed z-80 flex justify-center items-center"
+          onClick={() => setClose(false)}
+        >
+          <img className="w-1/2 h-[60vh]" src={distracted}></img>
+        </div>
+      )}
       <Navigacia />
       <Header />
-      <div className="w-full h-full bg-white p-5 lg:h-[100vh]">
+      <div className="w-full h-64 bg-white p-5 lg:h-[100vh]">
         <GaleriaGrid
           foto1={distracted}
           foto2={thejourney}
