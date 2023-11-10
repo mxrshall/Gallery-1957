@@ -26,13 +26,13 @@ function Novinky() {
         <Novinka
           fotka={image3}
           nazov="TIFFANIE DELINE AT THE LIGHTBOX GALLERY, UK"
-          popis="Africa Supernova' je rozsiahly prieskum súčasného afrického umenia, ktorý obsahuje diela 125 umelcov z 33 afrických krajín zo zbierky Carla & Pietera Schultinga."
+          popis="„A Spirit Inside“ spája prácu výberu umelkýn z kolekcie Ingram Collection a The Women's Art Collection v Cambridge, aby predstavila umelecké diela, ktoré vznikli zo sily ducha a dotýkajú sa elementárneho, fantastického, duchovného a politického."
           datum="20 SEP 2023"
         />
         <Novinka
           fotka={image4}
           nazov="ANNAN AFFOTEY FEATURED IN PORTRAIT OF A TOPBOY"
-          popis="Africa Supernova' je rozsiahly prieskum súčasného afrického umenia, ktorý obsahuje diela 125 umelcov z 33 afrických krajín zo zbierky Carla & Pietera Schultinga."
+          popis="Táto pop-up výstava, kurátorom multidisciplinárneho umelca Ronana McKenzieho a prezentovaná spoločnosťou Netflix, pripomína kultúrny vplyv, ktorý mal Top Boy na britskú televíziu, a to tak v predstavovaní života na sídliskách vo východnom Londýne, ako aj v podpore a mentoringu. vznikajúci britský talent."
           datum="9 SEP 2023"
         />
       </div>
