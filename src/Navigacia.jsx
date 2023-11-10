@@ -8,7 +8,7 @@ function Navigacia() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="flex flex-row w-full h-10 fixed z-50 lg:h-20">
+    <nav className="flex flex-row w-full h-10 fixed z-40 lg:h-20">
       <div className="w-10/12 h-10 lg:w-full lg:h-20 flex items-center text-white text-xl font-julius">
         <Link to="/home" className="hidden lg:inline ml-8">
           Domov

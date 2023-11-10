@@ -21,7 +21,7 @@ function Gallery() {
     <>
       {close && (
         <div
-          className="w-full h-full bg-black bg-opacity-90 fixed z-80 flex justify-center items-center"
+          className="w-full h-full bg-black bg-opacity-90 fixed z-50 flex justify-center items-center"
           onClick={() => setClose(false)}
         >
           <img className="w-1/2 h-[60vh]" src={distracted}></img>
