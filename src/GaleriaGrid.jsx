@@ -1,8 +1,5 @@
 function GaleriaGrid(props) {
-  const close = true;
-
-  const submit = (e) => {
-    const data = { close };
+  const submit = (data) => {
     props.submitData(data);
   };
 
@@ -35,10 +32,10 @@ function GaleriaGrid(props) {
             backgroundImage: `url(${props.foto1})`,
           }}
         ></div>
-        <div className="row-span-2 flex items-center justify-center flex-col font-julius text-3xl">
-          <p onClick={submit}>{props.nazov1}</p>
-          <p onClick={submit}>{props.nazov2}</p>
-          <p onClick={submit}>{props.nazov3}</p>
+        <div className="row-span-2 flex items-center justify-center flex-col font-julius text-3xl cursor-default">
+          <p onClick={() => submit(props.foto1)}>{props.nazov1}</p>
+          <p onClick={() => submit(props.foto2)}>{props.nazov2}</p>
+          <p onClick={() => submit(props.foto3)}>{props.nazov3}</p>
         </div>
         <div
           className="bg-cover bg-no-repeat"

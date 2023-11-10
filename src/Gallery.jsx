@@ -15,10 +15,13 @@ import ghanianlife from "./images/ghanianlife.jpg";
 import { useState } from "react";
 
 function Gallery() {
+  const [foto, setFoto] = useState("");
   const [close, setClose] = useState(false);
 
   const submitData = (data) => {
-    setClose(data);
+    console.log(data);
+    setFoto(data);
+    setClose(true);
   };
 
   return (
@@ -28,7 +31,7 @@ function Gallery() {
           className="w-full h-full bg-black bg-opacity-90 fixed z-50 flex justify-center items-center"
           onClick={() => setClose(false)}
         >
-          <img className="w-1/2 h-[60vh]" src={distracted}></img>
+          <img className="w-1/2 h-[60vh] object-contain" src={foto}></img>
         </div>
       )}
       <Navigacia />
