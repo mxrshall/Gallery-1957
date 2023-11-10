@@ -44,7 +44,7 @@ function Umelci() {
   return (
     <div className="flex justify-center items-center flex-col">
       <Nadpis nadpis="Umelci" color="black" />
-      <div className="w-full flex justify-center items-center mb-5">
+      <div className="w-full flex justify-center items-center mb-5 lg:w-1/2">
         <Swiper
           style={{
             "--swiper-navigation-color": "black",
