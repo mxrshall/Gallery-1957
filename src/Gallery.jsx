@@ -15,7 +15,11 @@ import ghanianlife from "./images/ghanianlife.jpg";
 import { useState } from "react";
 
 function Gallery() {
-  const [close, setClose] = useState(true);
+  const [close, setClose] = useState(false);
+
+  const submitData = (data) => {
+    setClose(data);
+  };
 
   return (
     <>
@@ -31,6 +35,7 @@ function Gallery() {
       <Header />
       <div className="w-full h-64 bg-white p-5 lg:h-[100vh]">
         <GaleriaGrid
+          submitData={submitData}
           foto1={distracted}
           foto2={thejourney}
           foto3={widewalls}
@@ -41,6 +46,7 @@ function Gallery() {
       </div>
       <div className="w-full h-64 bg-black p-5 text-white lg:h-[100vh]">
         <GaleriaGrid
+          submitData={submitData}
           foto1={ajalatravels}
           foto2={portraitofanartistresting}
           foto3={abike}
@@ -51,6 +57,7 @@ function Gallery() {
       </div>
       <div className="w-full h-64 bg-white p-5 lg:h-[100vh]">
         <GaleriaGrid
+          submitData={submitData}
           foto1={mrjoachim}
           foto2={venusovermanhattan}
           foto3={ghanianlife}
