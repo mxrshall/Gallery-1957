@@ -12,7 +12,7 @@ function News() {
       <Navigacia />
       <div className="w-full bg-white">
         <div
-          className="w-full h-48 bg-cover lg:h-[80vh]"
+          className="w-full h-64 bg-cover lg:h-[80vh] lg:bg-fixed"
           style={{
             backgroundImage: `url(${data.image})`,
           }}
