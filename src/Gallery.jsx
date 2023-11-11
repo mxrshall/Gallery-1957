@@ -1,7 +1,7 @@
 import Navigacia from "./Navigacia";
 import Footer from "./Footer";
-import Header from "./Header";
 import GaleriaGrid from "./GaleriaGrid";
+import { useState } from "react";
 
 import distracted from "./images/distracted.jpeg";
 import thejourney from "./images/thejourney.webp";
@@ -12,7 +12,6 @@ import abike from "./images/abike.webp";
 import mrjoachim from "./images/mrjoachim.webp";
 import venusovermanhattan from "./images/venusovermanhattan.jpeg";
 import ghanianlife from "./images/ghanianlife.jpg";
-import { useState } from "react";
 
 function Gallery() {
   const [foto, setFoto] = useState("");
@@ -35,7 +34,6 @@ function Gallery() {
         </div>
       )}
       <Navigacia />
-      <Header />
       <div className="w-full h-64 bg-white p-5 lg:h-[100vh]">
         <GaleriaGrid
           submitData={submitData}

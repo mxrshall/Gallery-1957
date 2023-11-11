@@ -1,5 +1,4 @@
 import Navigacia from "./Navigacia";
-import Header from "./Header";
 import Footer from "./Footer";
 
 import { useLocation } from "react-router-dom";
@@ -11,7 +10,6 @@ function News() {
   return (
     <>
       <Navigacia />
-      <Header />
       <div className="w-full bg-white">
         <div
           className="w-full h-48 bg-cover lg:h-[80vh]"

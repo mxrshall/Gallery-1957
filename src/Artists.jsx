@@ -1,7 +1,6 @@
 import Navigacia from "./Navigacia";
 import Footer from "./Footer";
 import Umelec from "./Umelec";
-import Header from "./Header";
 
 import annanaffotey from "./images/annanaffotey.jpeg";
 import juwonaderemi from "./images/juwonaderemi.jpg";
@@ -13,7 +12,6 @@ function Artists() {
   return (
     <>
       <Navigacia />
-      <Header />
       <Umelec
         id="annan"
         meno="ANNAN AFFOTEY"
