@@ -17,13 +17,17 @@ function Novinka({ fotka, nazov, popis, datum }) {
   return (
     <div className="w-3/4 h-52 mb-10 lg:w-1/4 lg:px-2">
       <img className="w-full h-36 lg:h-48" src={image}></img>
-      <div className="text-black text-sm font-julius pt-2 lg:text-lg">
+      <div className="w-full h-12 text-black text-sm font-semibold font-julius pt-2 lg:text-lg lg:h-16">
         <h1>{name}</h1>
       </div>
-      <Link to="/news" state={{ data: data }}>
-        Go to Page
+      <Link
+        to="/news"
+        state={{ data: data }}
+        className="text-black text-sm underline underline-offset-2 font-julius mt-5"
+      >
+        Cítat viac
       </Link>
-      <div className="text-black text-xs font-julius pt-2">
+      <div className="text-black text-xs font-julius pt-2 mb-5">
         <p>{date}</p>
       </div>
     </div>
