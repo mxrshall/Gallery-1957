@@ -1,6 +1,6 @@
-import Navigacia from "./Navigacia";
-import Footer from "./Footer";
-import GaleriaGrid from "./GaleriaGrid";
+import Navigacia from "../Navigacia";
+import Footer from "../Univerzalne/Footer";
+import GaleriaGrid from "../GallerySekcie/GaleriaGrid";
 import { useState } from "react";
 
 import distracted from "./images/distracted.jpeg";

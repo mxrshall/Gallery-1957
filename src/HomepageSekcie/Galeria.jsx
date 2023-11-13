@@ -1,5 +1,5 @@
 import { GaleriaText } from "./GaleriaText";
-import Nadpis from "./Nadpis";
+import Nadpis from "../Univerzalne/Nadpis";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 

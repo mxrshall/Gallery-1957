@@ -1,5 +1,5 @@
-import Navigacia from "./Navigacia";
-import Footer from "./Footer";
+import Navigacia from "../Navigacia";
+import Footer from "../Univerzalne/Footer";
 
 import { useLocation } from "react-router-dom";
 

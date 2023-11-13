@@ -1,6 +1,7 @@
-import Navigacia from "./Navigacia";
-import Footer from "./Footer";
-import Umelec from "./Umelec";
+import Navigacia from "../Navigacia";
+import Footer from "../Univerzalne/Footer";
+import Umelec from "../ArtistSekcie/Umelec";
+import { motion } from "framer-motion";
 
 import annanaffotey from "./images/annanaffotey.jpeg";
 import juwonaderemi from "./images/juwonaderemi.jpg";
@@ -50,14 +51,14 @@ function Artists() {
     <>
       <Navigacia />
       {umelci.map((umelec) => (
-        <div key={umelec.id}>
+        <motion.div key={umelec.id}>
           <Umelec
             id={umelec.id}
             meno={umelec.meno}
             popis={umelec.popis}
             image={umelec.image}
           />
-        </div>
+        </motion.div>
       ))}
       <Footer />
     </>

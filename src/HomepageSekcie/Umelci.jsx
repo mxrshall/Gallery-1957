@@ -1,4 +1,4 @@
-import Nadpis from "./Nadpis";
+import Nadpis from "../Univerzalne/Nadpis";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";

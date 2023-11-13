@@ -1,4 +1,4 @@
-import Nadpis from "./Nadpis";
+import Nadpis from "../Univerzalne/Nadpis";
 import Novinka from "./Novinka";
 
 import image1 from "./images/image1.png";
