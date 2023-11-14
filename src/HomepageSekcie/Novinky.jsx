@@ -77,14 +77,12 @@ function Novinky() {
       </motion.div>
       <div className="lg:hidden flex justify-center items-center flex-col">
         {imagesmobile.map((image) => (
-          <div key={image.id}>
-            <Novinka
-              fotka={image.fotka}
-              nazov={image.nazov}
-              popis={image.popis}
-              datum={image.datum}
-            />
-          </div>
+          <Novinka
+            fotka={image.fotka}
+            nazov={image.nazov}
+            popis={image.popis}
+            datum={image.datum}
+          />
         ))}
       </div>
     </div>
