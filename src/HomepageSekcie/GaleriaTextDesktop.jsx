@@ -3,7 +3,7 @@ import galeria2 from "../images/galeria2.webp";
 import galeria3 from "../images/galeria3.webp";
 import galeria4 from "../images/galeria4.jpg";
 
-export function GaleriaTextMobil() {
+export function GaleriaTextDesktop() {
   return (
     <article>
       Galéria 1957 je galéria súčasného umenia s priestormi v Accre, Ghane a

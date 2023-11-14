@@ -1,4 +1,4 @@
-import { GaleriaText } from "./GaleriaTextMobil";
+import { GaleriaTextMobil } from "./GaleriaTextMobil";
 import Nadpis from "../Univerzalne/Nadpis";
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
@@ -16,7 +16,7 @@ function GaleriaMobil() {
           ref={ref}
           className="w-3/4 h-64 text-xs font-julius text-justify text-white overflow-auto no-scrollbar"
         >
-          <GaleriaText />
+          <GaleriaTextMobil />
         </div>
         <div className="w-1/12 h-64 flex justify-center">
           <motion.div
