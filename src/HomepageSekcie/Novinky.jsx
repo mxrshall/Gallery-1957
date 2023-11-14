@@ -1,10 +1,12 @@
 import Nadpis from "../Univerzalne/Nadpis";
 import Novinka from "./Novinka";
 
-import image1 from "./images/image1.png";
-import image2 from "./images/image2.png";
-import image3 from "./images/image3.webp";
-import image4 from "./images/image4.jpg";
+import { motion } from "framer-motion";
+
+import image1 from "../images/image1.png";
+import image2 from "../images/image2.png";
+import image3 from "../images/image3.webp";
+import image4 from "../images/image4.jpg";
 
 const imagesmobile = [
   {
@@ -58,7 +60,12 @@ function Novinky() {
   return (
     <div className="flex justify-center items-center flex-col">
       <Nadpis nadpis="Novinky" color="black" />
-      <div className="hidden lg:flex w-full h-80">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.25 }}
+        className="hidden lg:flex w-full h-80"
+      >
         {imagesdesktop.map((image) => (
           <Novinka
             fotka={image.fotka}
@@ -67,15 +74,17 @@ function Novinky() {
             datum={image.datum}
           />
         ))}
-      </div>
+      </motion.div>
       <div className="lg:hidden flex justify-center items-center flex-col">
         {imagesmobile.map((image) => (
-          <Novinka
-            fotka={image.fotka}
-            nazov={image.nazov}
-            popis={image.popis}
-            datum={image.datum}
-          />
+          <div key={image.id}>
+            <Novinka
+              fotka={image.fotka}
+              nazov={image.nazov}
+              popis={image.popis}
+              datum={image.datum}
+            />
+          </div>
         ))}
       </div>
     </div>

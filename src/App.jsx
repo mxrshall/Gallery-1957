@@ -1,9 +1,9 @@
 import "./App.css";
-import Homepage from "./Homepage";
-import Artists from "./Artists";
+import Homepage from "./Stranky/Homepage";
+import Artists from "./Stranky/Artists";
+import Gallery from "./Stranky/Gallery";
+import News from "./Stranky/News";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Gallery from "./Gallery";
-import News from "./News";
 
 function App() {
   return (

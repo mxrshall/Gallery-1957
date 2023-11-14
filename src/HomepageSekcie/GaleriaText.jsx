@@ -1,7 +1,7 @@
-import galeria1 from "./images/galeria1.jpg";
-import galeria2 from "./images/galeria2.webp";
-import galeria3 from "./images/galeria3.webp";
-import galeria4 from "./images/galeria4.jpg";
+import galeria1 from "../images/galeria1.jpg";
+import galeria2 from "../images/galeria2.webp";
+import galeria3 from "../images/galeria3.webp";
+import galeria4 from "../images/galeria4.jpg";
 
 export function GaleriaText() {
   return (

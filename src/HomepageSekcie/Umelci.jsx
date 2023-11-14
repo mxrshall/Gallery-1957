@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 
-import umelec1 from "./images/umelec1.png";
-import umelec2 from "./images/umelec2.png";
-import umelec3 from "./images/umelec3.png";
-import umelec4 from "./images/umelec4.png";
-import umelec5 from "./images/umelec5.png";
+import umelec1 from "../images/umelec1.png";
+import umelec2 from "../images/umelec2.png";
+import umelec3 from "../images/umelec3.png";
+import umelec4 from "../images/umelec4.png";
+import umelec5 from "../images/umelec5.png";
 
 import "swiper/css";
 import "swiper/css/navigation";

@@ -1,13 +1,13 @@
-import Navigacia from "../Navigacia";
+import Navigacia from "../Univerzalne/Navigacia";
 import Footer from "../Univerzalne/Footer";
 import Umelec from "../ArtistSekcie/Umelec";
 import { motion } from "framer-motion";
 
-import annanaffotey from "./images/annanaffotey.jpeg";
-import juwonaderemi from "./images/juwonaderemi.jpg";
-import corneliusannor from "./images/corneliusannor.jpg";
-import gideonappah from "./images/gideonappah.webp";
-import ritamawuenabanissan from "./images/ritamawuenabanissan.jpg";
+import annanaffotey from "../images/annanaffotey.jpeg";
+import juwonaderemi from "../images/juwonaderemi.jpg";
+import corneliusannor from "../images/corneliusannor.jpg";
+import gideonappah from "../images/gideonappah.webp";
+import ritamawuenabanissan from "../images/ritamawuenabanissan.jpg";
 
 function Artists() {
   const umelci = [

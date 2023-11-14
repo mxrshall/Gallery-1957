@@ -1,17 +1,17 @@
-import Navigacia from "../Navigacia";
+import Navigacia from "../Univerzalne/Navigacia";
 import Footer from "../Univerzalne/Footer";
 import GaleriaGrid from "../GallerySekcie/GaleriaGrid";
 import { useState } from "react";
 
-import distracted from "./images/distracted.jpeg";
-import thejourney from "./images/thejourney.webp";
-import widewalls from "./images/widewalls.jpg";
-import ajalatravels from "./images/ajalatravels.webp";
-import portraitofanartistresting from "./images/portraitofanartistresting.jpg";
-import abike from "./images/abike.webp";
-import mrjoachim from "./images/mrjoachim.webp";
-import venusovermanhattan from "./images/venusovermanhattan.jpeg";
-import ghanianlife from "./images/ghanianlife.jpg";
+import distracted from "../images/distracted.jpeg";
+import thejourney from "../images/thejourney.webp";
+import widewalls from "../images/widewalls.jpg";
+import ajalatravels from "../images/ajalatravels.webp";
+import portraitofanartistresting from "../images/portraitofanartistresting.jpg";
+import abike from "../images/abike.webp";
+import mrjoachim from "../images/mrjoachim.webp";
+import venusovermanhattan from "../images/venusovermanhattan.jpeg";
+import ghanianlife from "../images/ghanianlife.jpg";
 
 function Gallery() {
   const [foto, setFoto] = useState("");

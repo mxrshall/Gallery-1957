@@ -1,6 +1,6 @@
-import social1 from "./images/social1.png";
-import social2 from "./images/social2.png";
-import social3 from "./images/social3.png";
+import social1 from "../images/social1.png";
+import social2 from "../images/social2.png";
+import social3 from "../images/social3.png";
 
 function Footer() {
   return (

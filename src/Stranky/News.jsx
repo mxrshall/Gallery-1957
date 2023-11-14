@@ -1,4 +1,4 @@
-import Navigacia from "../Navigacia";
+import Navigacia from "../Univerzalne/Navigacia";
 import Footer from "../Univerzalne/Footer";
 
 import { useLocation } from "react-router-dom";
