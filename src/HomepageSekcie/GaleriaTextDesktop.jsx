@@ -3,9 +3,27 @@ import galeria2 from "../images/galeria2.webp";
 import galeria3 from "../images/galeria3.webp";
 import galeria4 from "../images/galeria4.jpg";
 
+import { useRef, useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+
 export function GaleriaTextDesktop() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const control = useAnimation();
+
+  const right = {
+    hidden: { opacity: 0, x: 20 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      control.start("visible");
+    }
+  }, [isInView]);
+
   return (
-    <article className="text-base font-julius">
+    <article ref={ref} className="text-base font-julius">
       <div className="w-full flex items-center justify-center my-5">
         <div className="w-1/2">
           Galéria 1957 je galéria súčasného umenia s priestormi v Accre, Ghane a
@@ -18,7 +36,14 @@ export function GaleriaTextDesktop() {
           sociálnej histórie mimo západných naratívov.
         </div>
         <div className="w-1/2 flex items-center justify-center">
-          <img className="w-1/2 h-48" src={galeria1}></img>
+          <motion.img
+            variants={right}
+            initial="hidden"
+            animate={control}
+            transition={{ duration: 0.5, delay: 1 }}
+            className="w-1/2 h-48"
+            src={galeria1}
+          ></motion.img>
         </div>
       </div>
       <div className="w-full flex items-center justify-center my-5">
@@ -32,7 +57,14 @@ export function GaleriaTextDesktop() {
           rastúcou sieťou medzinárodných spolupracovníkov.
         </div>
         <div className="w-1/2 flex items-center justify-center">
-          <img className="w-1/2 h-48" src={galeria2}></img>
+          <motion.img
+            variants={right}
+            initial="hidden"
+            animate={control}
+            transition={{ duration: 0.5, delay: 1.2 }}
+            className="w-1/2 h-48"
+            src={galeria2}
+          ></motion.img>
         </div>
       </div>
       <div className="w-full flex items-center justify-center my-5">
@@ -46,7 +78,14 @@ export function GaleriaTextDesktop() {
           zapojenia sa do pulzujúcej súčasnej umeleckej scény v Ghane.
         </div>
         <div className="w-1/2 flex items-center justify-center">
-          <img className="w-1/2 h-48" src={galeria3}></img>
+          <motion.img
+            variants={right}
+            initial="hidden"
+            animate={control}
+            transition={{ duration: 0.5, delay: 1.4 }}
+            className="w-1/2 h-48"
+            src={galeria3}
+          ></motion.img>
         </div>
       </div>
       <div className="w-full flex items-center justify-center my-5">
@@ -57,7 +96,14 @@ export function GaleriaTextDesktop() {
           propagovať začínajúcich a etablovaných umelcov.
         </div>
         <div className="w-1/2 flex items-center justify-center">
-          <img className="w-1/2 h-48" src={galeria4}></img>
+          <motion.img
+            variants={right}
+            initial="hidden"
+            animate={control}
+            transition={{ duration: 0.5, delay: 1.6 }}
+            className="w-1/2 h-48"
+            src={galeria4}
+          ></motion.img>
         </div>
       </div>
     </article>
