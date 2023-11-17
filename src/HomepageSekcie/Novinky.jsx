@@ -10,6 +10,7 @@ import image4 from "../images/image4.jpg";
 
 const imagesmobile = [
   {
+    id: 1,
     fotka: image1,
     nazov: "ZAK OVÉ AT FRIEZE SCULPTURE 2023",
     popis:
@@ -17,6 +18,7 @@ const imagesmobile = [
     datum: "21 SEP 2023",
   },
   {
+    id: 2,
     fotka: image2,
     nazov: "AFRICA SUPERNOVA COLLECTION CARLA & PIETER SCHULTING",
     popis:
@@ -27,6 +29,7 @@ const imagesmobile = [
 
 const imagesdesktop = [
   {
+    id: 1,
     fotka: image1,
     nazov: "ZAK OVÉ AT FRIEZE SCULPTURE 2023",
     popis:
@@ -34,6 +37,7 @@ const imagesdesktop = [
     datum: "21 SEP 2023",
   },
   {
+    id: 2,
     fotka: image2,
     nazov: "AFRICA SUPERNOVA COLLECTION CARLA & PIETER SCHULTING",
     popis:
@@ -41,6 +45,7 @@ const imagesdesktop = [
     datum: "2 SEP 2023",
   },
   {
+    id: 3,
     fotka: image3,
     nazov: "TIFFANIE DELINE AT THE LIGHTBOX GALLERY, UK",
     popis:
@@ -48,6 +53,7 @@ const imagesdesktop = [
     datum: "20 SEP 2023",
   },
   {
+    id: 4,
     fotka: image4,
     nazov: "ANNAN AFFOTEY FEATURED IN PORTRAIT OF A TOPBOY",
     popis:
@@ -68,6 +74,7 @@ function Novinky() {
       >
         {imagesdesktop.map((image) => (
           <Novinka
+            key={image.id}
             fotka={image.fotka}
             nazov={image.nazov}
             popis={image.popis}
@@ -83,6 +90,7 @@ function Novinky() {
       >
         {imagesmobile.map((image) => (
           <Novinka
+            key={image.id}
             fotka={image.fotka}
             nazov={image.nazov}
             popis={image.popis}
