@@ -16,6 +16,11 @@ export function GaleriaTextDesktop() {
     visible: { opacity: 1, x: 0 },
   };
 
+  const top = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   useEffect(() => {
     if (isInView) {
       control.start("visible");
@@ -25,7 +30,13 @@ export function GaleriaTextDesktop() {
   return (
     <article ref={ref} className="text-base font-julius">
       <div className="w-full flex items-center justify-center my-5">
-        <div className="w-1/2">
+        <motion.div
+          variants={top}
+          initial="hidden"
+          animate={control}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="w-1/2"
+        >
           Galéria 1957 je galéria súčasného umenia s priestormi v Accre, Ghane a
           Londýne, Spojené kráľovstvo.
           <br />
@@ -34,7 +45,7 @@ export function GaleriaTextDesktop() {
           postupmi z týchto komunít a zvyškom sveta, pričom predstavuje umelcov,
           ktorí skúmajú koncepty spolupatričnosti a identity, kultúrnej výmeny a
           sociálnej histórie mimo západných naratívov.
-        </div>
+        </motion.div>
         <div className="w-1/2 flex items-center justify-center">
           <motion.img
             variants={right}
@@ -47,7 +58,13 @@ export function GaleriaTextDesktop() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center my-5">
-        <div className="w-1/2">
+        <motion.div
+          variants={top}
+          initial="hidden"
+          animate={control}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="w-1/2"
+        >
           Galéria 1957, ktorú spustil Marwan Zakhem v roku 2016 na Deň
           nezávislosti Ghany, sa odvtedy rozšírila do troch galérií v Akkre.
           Pôvodne bola založená na propagáciu prítomnosti Ghany a západnej
@@ -55,7 +72,7 @@ export function GaleriaTextDesktop() {
           Londýnsky priestor Gallery 1957 bol otvorený v októbri 2020 a
           poskytuje umelcom ďalšiu platformu na budovanie dialógov s jej
           rastúcou sieťou medzinárodných spolupracovníkov.
-        </div>
+        </motion.div>
         <div className="w-1/2 flex items-center justify-center">
           <motion.img
             variants={right}
@@ -68,7 +85,13 @@ export function GaleriaTextDesktop() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center my-5">
-        <div className="w-1/2">
+        <motion.div
+          variants={top}
+          initial="hidden"
+          animate={control}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="w-1/2"
+        >
           Galéria 1957 predstavuje výstavy, inštalácie a predstavenia slávnych
           umelcov, čím podporuje spojenie medzi miestnym a medzinárodným
           publikom. Globálne partnerstvá s galériou a prebiehajúci program
@@ -76,7 +99,7 @@ export function GaleriaTextDesktop() {
           medzinárodných umelcov a umeleckých profesionálov. Každoročný kultúrny
           týždeň Galérie v septembri slúži ako platforma na podporu hlbšieho
           zapojenia sa do pulzujúcej súčasnej umeleckej scény v Ghane.
-        </div>
+        </motion.div>
         <div className="w-1/2 flex items-center justify-center">
           <motion.img
             variants={right}
@@ -89,12 +112,18 @@ export function GaleriaTextDesktop() {
         </div>
       </div>
       <div className="w-full flex items-center justify-center my-5">
-        <div className="w-1/2">
+        <motion.div
+          variants={top}
+          initial="hidden"
+          animate={control}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="w-1/2"
+        >
           V roku 2021 Galéria 1957 uviedla cenu Yaa Asantewaa Art Prize pre
           ženské umelkyne z Ghany, vôbec prvú venovanú umeleckú cenu svojho
           druhu. Cieľom ceny je ďalej posilniť záväzok galérie podporovať a
           propagovať začínajúcich a etablovaných umelcov.
-        </div>
+        </motion.div>
         <div className="w-1/2 flex items-center justify-center">
           <motion.img
             variants={right}
