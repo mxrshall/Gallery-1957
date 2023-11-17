@@ -75,7 +75,12 @@ function Novinky() {
           />
         ))}
       </motion.div>
-      <div className="lg:hidden flex justify-center items-center flex-col">
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.8 }}
+        className="lg:hidden flex justify-center items-center flex-col"
+      >
         {imagesmobile.map((image) => (
           <Novinka
             fotka={image.fotka}
@@ -84,7 +89,7 @@ function Novinky() {
             datum={image.datum}
           />
         ))}
-      </div>
+      </motion.div>
     </div>
   );
 }

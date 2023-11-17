@@ -3,9 +3,39 @@ import galeria2 from "../images/galeria2.webp";
 import galeria3 from "../images/galeria3.webp";
 import galeria4 from "../images/galeria4.jpg";
 
+import { useRef, useEffect } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
+
 export function GaleriaTextMobil() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const control = useAnimation();
+
+  const right = {
+    hidden: { opacity: 0, x: 20 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const top = {
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  useEffect(() => {
+    if (isInView) {
+      control.start("visible");
+    }
+  }, [isInView]);
+
   return (
-    <article>
+    <motion.article
+      ref={ref}
+      variants={top}
+      initial="hidden"
+      animate={control}
+      transition={{ duration: 0.5, delay: 0.5 }}
+      className="font-julius"
+    >
       Galéria 1957 je galéria súčasného umenia s priestormi v Accre, Ghane a
       Londýne, Spojené kráľovstvo.
       <br />
@@ -36,6 +66,6 @@ export function GaleriaTextMobil() {
       posilniť záväzok galérie podporovať a propagovať začínajúcich a
       etablovaných umelcov.
       <img className="w-full h-42 pt-5 pb-12" src={galeria4}></img>
-    </article>
+    </motion.article>
   );
 }
